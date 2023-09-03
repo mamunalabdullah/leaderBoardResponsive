@@ -8,26 +8,44 @@ li{
 a{
     text-decoration: none;
 }
+
+body{
+    background-color: #F3F1EF;
+}
 img{
     display: block;
     height: auto;
     max-width: 100%;
 }
-.top-player{
-    width: 60%;
-    margin: 0 auto;
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.title{
+.container {
+    background-color: #fff;
+    width: 60%;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
+}
+
+.section-title{
     color: #562EFF;
     font-size: 24px;
+}
+
+/* top player styles */
+.top-player{
+    margin-bottom: 30px;
 }
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    grid-row-gap: 25px;
     margin-top: 25px;
 }
-.player{
+.player, .blog{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -37,3 +55,33 @@ img{
     height: 56px;
     width: 56px;
 }
+
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
+}
+
+/* top blog styles */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 25px;
+    margin-top: 25px;
+}
+
+.blog img{
+    width: 177px;
+    height: 117px;
+}
+.blog-details{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    font-size: 16px;
+    color: #9F9F9F;
+}
+
+/* latest course styles */
