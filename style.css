@@ -85,3 +85,53 @@ hr{
 }
 
 /* latest course styles */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    margin-top: 25px;
+}
+.course{
+    box-shadow: 10px 10px 5px #9F9F9F;
+    padding: 12px;
+    border-radius: 5px;
+}
+.course img{
+    width: 224px;
+    height: 104px;
+}
+.course-title{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.course-instructor{
+    color: #ED6B4F;
+    font-size: 15px;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.fa-star{
+    color: #AEAEAE;
+}
+.fa-star.filled{
+    color: #FFC014;
+
+}
+.course-duration{
+    background-color: #FFE4E8;
+    color: #FF4A60;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 575px) {
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);   
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+}
